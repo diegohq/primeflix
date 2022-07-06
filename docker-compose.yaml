@@ -4,7 +4,7 @@ services:
     image: 'node:16'
     ports:
       - '3000:3000'
-    working_dir: '/code/pomodoro'
+    working_dir: '/code/primeflix'
     entrypoint: ['npm']
     volumes:
       - ./:/code/primeflix
@@ -12,7 +12,7 @@ services:
     image: 'node:16'
     ports:
       - '3000:3000'
-    working_dir: '/code/pomodoro'
+    working_dir: '/code/primeflix'
     command: ['npm', 'start']
     volumes:
       - ./:/code/primeflix
